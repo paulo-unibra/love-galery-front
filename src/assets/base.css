@@ -1,4 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -34,7 +36,13 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+  --sidebar-bg-color: #f8f9fa;
+  --sidebar-border-color: #dee2e6;
+  --text-color: #000;
+  --hamburger-color: #000;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -47,6 +55,11 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --sidebar-bg-color: #343a40;
+  --sidebar-border-color: #495057;
+  --text-color: #f8f9fa;
+  --hamburger-color: #f8f9fa;
   }
 }
 
@@ -83,4 +96,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body, h1 {
+  font-family: 'Roboto', sans-serif;
 }
